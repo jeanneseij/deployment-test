@@ -11,7 +11,7 @@ import { GlobalStyles } from './GlobalStyles';
 const App = () => {
 
   return (
-      <Router>
+      <Router basename='/deployment-test'>
         <GlobalStyles />
         <NavbarComponent />
         <Routes>

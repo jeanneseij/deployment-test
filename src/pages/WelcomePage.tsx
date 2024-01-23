@@ -19,6 +19,7 @@ const WelcomePage = () => {
   const [error, setError] = useState<boolean>(false);
 
   useEffect(() => {
+    //Fetch Random Images for Slideshow
     const loadCatImages = async () => {
       setIsLoading(true);
       try {
@@ -59,7 +60,9 @@ const WelcomePage = () => {
         {isLoading ? (
           <LoadingIcon />
         ) : error ? (
-          <ApiErrorAlert message="Apologies but we could not load new cats for you at this time! Miau!" />
+          <>
+          <ApiErrorAlert message="Apologies but we could not load new cats for you at this time! Miau!" /> {/*Return Alert Banner when in ecnountering API error*/}
+          </>
         ) : (
           <>
             {currentImage && (

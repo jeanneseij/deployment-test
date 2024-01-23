@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
+// Keyframe animation for fading in
 const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -10,6 +11,7 @@ const fadeIn = keyframes`
   }
 `;
 
+// Keyframe animation for scaling up
 const scaleUp = keyframes`
   0% {
     transform: scale(1);
@@ -19,6 +21,7 @@ const scaleUp = keyframes`
   }
 `;
 
+// Container for the welcome section
 export const WelcomeContainer = styled.div`
   max-width: 100vw;
   height: 100vh;
@@ -32,6 +35,7 @@ export const WelcomeContainer = styled.div`
   text-align: center;
 `;
 
+// Brand name heading
 export const BrandName = styled.h1`
   display: flex;
   align-items: center;
@@ -49,6 +53,7 @@ export const BrandName = styled.h1`
   }
 `;
 
+// Description text
 export const Description = styled.p`
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -56,6 +61,7 @@ export const Description = styled.p`
   font-weight: 400;
 `;
 
+// Container for the slideshow
 export const SlideshowContainer = styled.div`
   position: relative;
   display: flex;
@@ -69,6 +75,7 @@ export const SlideshowContainer = styled.div`
   box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
 `;
 
+// Slideshow image with fade-in animation
 export const SlideshowImage = styled.img`
   max-width: 90%;
   max-height: 90%;
@@ -82,6 +89,7 @@ export const SlideshowImage = styled.img`
   }
 `;
 
+// Explore button with hover effect
 export const ExploreButton = styled(Link)`
   background-color: #5a3825;
   color: #f3dace;

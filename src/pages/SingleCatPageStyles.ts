@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// Container component for the main content area
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@ export const Container = styled.div`
   margin: auto;
 `;
 
+// Container for displaying an image with styling
 export const ImageContainer = styled.div`
   position: relative;
   padding: 20px;
@@ -16,17 +18,18 @@ export const ImageContainer = styled.div`
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  max-height: 570px;
-  max-width: 1200px;
+  height: 570px;
+  width: 1200px;
   display: flex;
-  justify-content: center
+  justify-content: center;
 `;
 
+// Button component for navigation
 export const BackButton = styled.button`
   position: absolute;
   top: 10px;
   left: 30px;
-  width: 55px; // Initial width
+  width: 55px;
   height: 55px;
   border-radius: 5px;
   cursor: pointer;
@@ -38,25 +41,25 @@ export const BackButton = styled.button`
   justify-content: center;
   align-items: center;
   transition: width 0.3s ease;
-  overflow: hidden; // To keep the transition smooth
+  overflow: hidden;
 
   &:before {
-    content: '←'; // Unicode left-pointing arrow
+    content: '←';
     position: absolute;
     opacity: 1;
     transition: opacity 0.3s ease;
   }
 
   &:hover {
-    width: 100px; // Width on hover to fit "Back"
+    width: 100px;
     background-color: #e1bba7;
 
     &:before {
-      opacity: 0; // Hide the arrow on hover
+      opacity: 0;
     }
 
     &:after {
-      content: 'Back'; // Text to show on hover
+      content: 'Back';
       position: absolute;
       opacity: 1;
       transition: opacity 0.3s ease;
@@ -64,13 +67,16 @@ export const BackButton = styled.button`
   }
 `;
 
+// Image component
 export const CatImage = styled.img`
-  max-height: 10%
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.4);
 `;
 
+// Container for displaying details
 export const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -83,6 +89,7 @@ export const DetailsContainer = styled.div`
   width: 100%;
 `;
 
+// Individual detail item within the DetailsContainer
 export const DetailItem = styled.p`
   margin: 5px 0;
   font-size: 16px;

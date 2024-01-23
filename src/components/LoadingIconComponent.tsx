@@ -11,6 +11,7 @@ const LoadingIcon = ({ url = LOADING_ANIMATION_URL }: LoadingIconProps) => {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
+    //Fetch Animation Data from Lottie Animations
     const fetchAnimationData = async () => {
       try {
         const response = await axios.get(url);
